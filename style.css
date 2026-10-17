@@ -1,0 +1,31 @@
+:root{--bg:#f3f0fb;--card:#fff;--tx:#1d1533;--mu:#6b6285;--pr:#4b00be;--pr2:#7a3cf0;--ok:#12805c;--okb:#e0f6ee;--no:#b4531a;--nob:#fdeedd;--bd:#ddd5f2;--hint:#fff6d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150f26;--card:#211a3a;--tx:#f0ebfc;--mu:#a99fc7;--pr:#9b6bff;--pr2:#6f3df0;--ok:#4fd6a4;--okb:#12392e;--no:#ffb27a;--nob:#3b2514;--bd:#3a3060;--hint:#3a3317}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;min-height:100vh}
+header{display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--bd)}
+header img{height:36px;width:auto}header b{color:var(--pr);font-size:1.05rem}header span{margin-left:auto;color:var(--mu);font-size:.85rem}
+main{max-width:760px;margin:0 auto;padding:18px 14px 40px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 4px 18px rgba(75,0,190,.07)}
+h1{font-size:1.7rem;margin:.3em 0;color:var(--pr)}h2{margin:.2em 0 .5em}
+.c{text-align:center}.mu{color:var(--mu)}.big{width:150px;max-width:40%;height:auto}
+button{font:inherit;cursor:pointer;border:0;border-radius:10px;padding:10px 18px;background:var(--pr);color:#fff;font-weight:600}
+button:hover:not(:disabled){background:var(--pr2)}button:disabled{opacity:.4;cursor:not-allowed}
+button.sec{background:transparent;color:var(--pr);border:2px solid var(--pr)}button.hb{background:#f5b301;color:#2a2000}
+button.cta{font-size:1.15rem;padding:14px 28px;background:linear-gradient(90deg,var(--pr),var(--pr2));box-shadow:0 6px 16px rgba(75,0,190,.35)}
+input[type=text],input[type=password],select{font:inherit;padding:10px 12px;border-radius:10px;border:2px solid var(--bd);background:var(--bg);color:var(--tx);width:100%;max-width:340px}
+.opt{display:block;width:100%;text-align:left;margin:8px 0;background:var(--bg);color:var(--tx);border:2px solid var(--bd);font-weight:500}
+.opt:hover:not(:disabled){background:var(--bd)}.opt.sel{border-color:var(--pr);background:var(--bd)}.opt.good{border-color:var(--ok);background:var(--okb)}.opt.bad{border-color:var(--no);background:var(--nob)}
+.opt:disabled{opacity:1;cursor:default}
+pre{background:#1e1636;color:#e9defd;padding:12px;border-radius:10px;overflow-x:auto;margin:10px 0;font-size:.95rem}
+.bar{height:10px;background:var(--bd);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pr),var(--pr2));transition:width .3s}
+.meta{display:flex;justify-content:space-between;font-size:.85rem;color:var(--mu);margin:6px 0 12px;gap:8px;flex-wrap:wrap}
+.tag{display:inline-block;font-size:.75rem;padding:2px 10px;border-radius:99px;background:var(--bd);color:var(--pr);font-weight:700}
+.fb{padding:12px 14px;border-radius:12px;margin-top:12px}.fb.ok{background:var(--okb);color:var(--ok)}.fb.no{background:var(--nob);color:var(--no)}.fb p{margin:.3em 0;color:var(--tx)}
+.hint{background:var(--hint);padding:10px 14px;border-radius:12px;margin-top:10px}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;align-items:center}
+.mrow{display:flex;gap:10px;align-items:center;margin:8px 0;flex-wrap:wrap}.mrow code{min-width:44px;font-weight:700;font-size:1.1rem}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{padding:7px 9px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}th{color:var(--pr)}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:12px 0}.stat div{background:var(--bg);border-radius:12px;padding:10px;text-align:center}.stat b{display:block;font-size:1.4rem;color:var(--pr)}
+.pass{color:var(--ok);font-weight:700}.need{color:var(--no);font-weight:700}
+.note{font-size:.82rem;color:var(--mu);border-left:3px solid var(--pr);padding-left:10px;margin-top:14px}
+.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
